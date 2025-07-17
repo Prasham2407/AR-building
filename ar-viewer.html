@@ -1,0 +1,23 @@
+<!-- ar-viewer.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AR Building Viewer</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <style>
+    body, html { margin:0; padding:0; height:100%; }
+    model-viewer { width:100%; height:100vh; background-color:#f0f0f0; }
+  </style>
+</head>
+<body>
+  <model-viewer
+    src="./mybuilding.glb"
+    ar
+    ar-modes="webxr scene-viewer quick-look"
+    camera-controls
+    environment-image="neutral"
+    shadow-intensity="1"
+  ></model-viewer>
+</body>
+</html>
